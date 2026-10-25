@@ -44,7 +44,9 @@ label{display:block;font-size:.78rem;color:var(--mu);margin:10px 0 3px}select,in
 <div class="row"><div><label>Valor de rescate · r (adim)</label><input id="r" data-dec="2" value="0,10"><div class="note">Fr = 1 − r</div></div><div></div></div>
 <div class="row"><div><label>Área de terreno · At (m²)</label><input id="at" data-dec="2" value="2750"></div><div><label>Área de construcción · Ac (m²)</label><input id="ac" data-dec="2" value="950"></div></div>
 <div class="btns"><button class="btn" id="calc">Calcular</button><button class="btn sec" id="reset">Resetear</button></div>
-</div><div class="card"><h2>Paso 3 · Resultado: Ct sugerido por RK y RV</h2><div id="res"></div><div class="btns np"><button class="btn sec" id="print" disabled>🖨 Imprimir resultados</button></div></div></div>
+<div class="btns"><button class="btn sec" id="print" disabled>🖨 Imprimir resultados</button></div>
+<div class="note">Imprime el resultado y, si realizó la simulación, también el histograma y los estadísticos.</div>
+</div><div class="card"><h2>Paso 3 · Resultado: Ct sugerido por RK y RV</h2><div id="res"></div></div></div>
 <div class="card mccard" id="mccard" style="margin-top:18px"><h2>Paso 4 · Simulación Monte Carlo (Beta-PERT) y resultados · opcional</h2>
 <div class="row np" style="align-items:end"><div><label>Número de pruebas</label><select id="np"><option value="10000">10.000</option><option value="50000">50.000</option><option value="100000" selected>100.000</option></select></div><div><button class="btn mc" id="sim">Simular Monte Carlo</button></div></div>
 <div class="note np">Mínimo: Ct base · Más probable: menor entre RK y RV · Máximo: mayor entre RK y RV. Si RK y RV son iguales no hay simulación.</div><div id="mc" style="margin-top:10px"></div></div>
